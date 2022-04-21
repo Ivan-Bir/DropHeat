@@ -5,6 +5,7 @@ from Geometry import *
 from Geometry.Sourses import *
 
 from Section import *
+from Section.Section import Section
 from Solver import *
 
 class Solver:
@@ -18,6 +19,12 @@ class Solver:
             self.results.append(section.solve())
             #TODO
         return True
+
+    def add_section(self):
+        section = Section()
+        section.create_section()
+        section.get_math_model()
+        self.sections.append(section)
 
 
 

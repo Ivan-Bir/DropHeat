@@ -13,5 +13,7 @@ print("Hello, world!")
 # sections.append(section)
 
 solver = Solver()
-solver.
+
+# if button is Pressed:
+solver.add_section()
 
